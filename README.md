@@ -8,4 +8,4 @@ Note: All Photographs :framed_picture:  are taken from Instagram [@Doctorphoto__
 
 ### Check out the website :point_right:	 [:link: Link]
 
-[:link: Link]: https://drish-xd.github.io/Photographer-Website/
+[:link: Link]: https://doctorphoto.netlify.app/
