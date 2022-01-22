@@ -4,7 +4,7 @@
 
 Note: All Photographs :framed_picture:  are taken from Instagram [@professionalism__]
 
-[@professionalism__]: https://www.instagram.com/professionalism__/
+[@professionalism__]: https://www.instagram.com/Doctorphoto_/
 
 ### Check out the website :point_right:	 [:link: Link]
 
