@@ -1,0 +1,388 @@
+/* Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
+
+@font-face {
+  font-family: 'Signature';
+  src: url('Fonts/Signature.woff2') format('woff2'),
+      url('Fonts/Signature.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Futurist';
+  src: url('Fonts/FuturistFixedWidthRegular.woff2') format('woff2'),
+      url('Fonts/FuturistFixedWidthRegular.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Coyote';
+  src: url('Fonts/Coyote-SemiBoldDEMO.woff2') format('woff2'),
+      url('Fonts/Coyote-SemiBoldDEMO.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Code */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+/* custom Scrollbar */
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #0a0a0ae6;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #9e9e9e;
+}
+
+/* navbar */
+
+nav{
+  height: auto;
+  background-color: #0a0a0ae6;
+}
+
+nav .navbar-brand{
+  color: #fafafa;
+  font: 20px "Signature";
+}
+
+.nav-item {
+  text-align: center;
+}
+
+nav .navbar-nav a {
+  text-decoration: none;
+  letter-spacing: .8mm; 
+  color: #fafafa;
+  font: 400 20px 'Coyote', sans-serif;
+  margin: 5px 3vw;
+}
+
+
+nav .navbar-nav a:hover {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.navbar-toggler{
+  border: none !important;
+}
+
+.hamburger span {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin-top: 6px;
+  background: #fafafa;
+  transition: all 0.4s;
+}
+
+.hamburger span:before, .hamburger span:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  background: #fafafa;
+  position: absolute;
+  transition: all 0.4s;
+}
+
+.hamburger span:before {
+  top: -6px;
+}
+
+.hamburger span:after {
+  bottom: -6px;
+}
+
+.hamburger.hamburger-icon {
+  transform: translate(0, -50%);
+}
+
+.hamburger.close.hamburger-icon span {
+  transform: rotate(180deg);
+  background: transparent;
+}
+
+.hamburger.close.hamburger-icon span:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.hamburger.close.hamburger-icon span:after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+/* homepage */
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(Assets/blackorchid.png);
+}
+
+.name-main {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.name-main h1 {
+  font-size: 4.1vw;
+  color: rgba(255, 255, 255);
+  font-family: 'Futurist';
+  text-align: center;
+  font-weight: 600;
+}
+
+.splitting .char {
+  animation: slide-in 1.2s cubic-bezier(.5, 0, .5, 1) both;
+  animation-delay: calc(80ms * var(--char-index));
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(1em) rotate(50deg) scale(0);
+    opacity: 0;
+  }
+}
+
+.image-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.image-main img {
+  width: 37%;
+  height: auto;
+  filter: grayscale(50%) contrast(120%) brightness(90%);
+}
+
+/* about-page */
+
+.about {
+  width: 100%;
+  height: auto;
+  padding: 18vh 0;
+  background-image: url(Assets/light\ paper\ fibers.png);
+}
+
+.about-title h1 {
+  text-transform: uppercase;
+  font-size: 70px;
+  font-family: 'Futurist', sans-serif;
+  text-align: center;
+}
+
+.about-title .iconify {
+  font-size: 100px;
+  text-align: center;
+}
+
+.about-text {
+  text-align: justify;
+}
+
+.about-text h3 {
+  font-family: 'Trispace', sans-serif;
+  letter-spacing: .05em;
+  line-height: 40px;
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+
+.about-text p {
+  font-family: 'Trispace', sans-serif;
+  line-height: 35px;
+  font-size: 18px;
+}
+
+/* projects */
+
+.projects {
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+  background-image: url(Assets/blackorchid.png);
+  text-align: center;
+}
+
+.capture-heading {
+  padding: 80px 0 20px 0;
+}
+
+.camera-icon .iconify {
+  color: #fff;
+  font-size: 100px;
+  text-align: center;
+}
+
+.projects h1 {
+  text-transform: uppercase;
+  font-size: 70px;
+  line-height: 100px;
+  font-family: 'Futurist', sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.pic {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.picture {
+  width: 50%;
+  height: auto;
+  margin: 80px 0;
+  border: 1.5rem solid #eeeeee;
+  box-shadow: 5px 5px 20px rgba(200, 200, 200, 0.4);
+}
+
+/* Custom Animation  */
+
+[data-aos="img-left"] {
+  opacity: 0;
+  transform: translateY(10em);
+  transition-property: transform, opacity;
+}
+[data-aos="img-left"].aos-animate {
+  opacity: 1;
+  transform: translateY(0em) rotate(-5deg);
+}
+
+[data-aos="img-right"] {
+  opacity: 0;
+  transform: translateY(10em);
+  transition-property: transform, opacity;
+}
+[data-aos="img-right"].aos-animate {
+  opacity: 1;
+  transform: translateY(0em) rotate(5deg);
+}
+
+/* contacts */
+
+.contacts {
+  width: 100%;
+  height: auto;
+  background-image: url(Assets/light\ paper\ fibers.png);
+  padding: 18vh 0;
+}
+
+.contacts-title h1 {
+  text-transform: uppercase;
+  font-size: 70px;
+  font-family: 'Futurist', sans-serif;
+  text-align: center;
+}
+
+.contacts-text p {
+  font-family: 'Trispace', sans-serif;
+  font-size: 25px;
+  text-align: justify;
+}
+
+.contacts-social ul {
+  margin-top: 80px !important;
+  padding: 0 !important;
+}
+
+.contacts-social ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 8vw;
+}
+
+.contacts-social .iconify {
+  font-size: 30px;
+  color: #111111;
+}
+
+/* copyright */
+
+footer {
+  position: relative;
+  text-align: center;
+  bottom: 0;
+  background-color: #111111;
+  padding: 25px;
+  font-family: "Trispace";
+  color: #f0f8ff;
+}
+
+
+@media (max-width: 980px) {
+
+  nav .navbar-brand{
+    font-size: 15px;
+  }
+
+  .image-main img {
+    width: 80%;
+  }
+  
+  .name-main h1 {
+    font-size: 8.2vw;
+  }
+
+  .picture {
+    width: 80%;
+    border: 1rem solid #eeeeee;
+    margin: 40px 0;
+  }
+  .projects h1 {
+    font-size: 10vw;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .about-title h1 {
+    font-size: 15vw;
+  }
+  
+  .contacts-title h1 {
+    font-size: 15vw;
+  }
+
+}
