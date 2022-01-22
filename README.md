@@ -2,7 +2,7 @@
 
 **This is a template of a website, witten in HTML, CSS and Javascript.**
 
-Note: All Photographs :framed_picture:  are taken from Instagram [@Doctorphoto_]
+Note: All Photographs :framed_picture:  are taken from Instagram [@Doctorphoto__]
 
 [@professionalism__]: https://www.instagram.com/Doctorphoto_/
 
